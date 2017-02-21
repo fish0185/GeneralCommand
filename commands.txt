@@ -1,3 +1,10 @@
+###########################################################################################################
 How to delete directories with path/names too long for normal delete
 1. install rimraf: npm install -g rimraf
 2. rimraf <dir>
+###########################################################################################################
+How to find saved Wi-Fi password
+netsh wlan show profile (this will get list of saved wifi name)
+netsh wlan show profile “NETWORK NAME” key=clear (replace NETWORK NAME to the wifi name your want to find)
+You’ll see your Wi-Fi password in ‘key content,’ under security settings.
+###########################################################################################################
