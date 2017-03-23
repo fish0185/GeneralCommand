@@ -8,3 +8,8 @@ netsh wlan show profile (this will get list of saved wifi name)
 netsh wlan show profile “NETWORK NAME” key=clear (replace NETWORK NAME to the wifi name your want to find)
 You’ll see your Wi-Fi password in ‘key content,’ under security settings.
 ###########################################################################################################
+How to delete .orig files after merge from git repository?
+http://stackoverflow.com/questions/12366150/how-to-delete-orig-files-after-merge-from-git-repository
+cd /your/repo/directory
+find . -name '*.orig' -delete 
+###########################################################################################################
