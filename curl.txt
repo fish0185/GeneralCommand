@@ -12,3 +12,6 @@ curl -dxxxDataxxx http://example.com //when you use the short options with argum
 curl -A "I am your father" http://example.com //set user-agent
 *fiddler and curl*
 curl -x 127.0.0.1:8888 -k www.example.com # -x option telling curl to using fidder as proxy, -k disale ssl validation, make sure provide fiddler's port number, in this case it is 8888, it is a one time setting next call will not use fidder proxy
+
+curl -d '{ "name": "Darth" }' http://example.com # send json, not working in windows where single quotes doesn't work the same way
+curl -d @json http://example.com #send data to curl via a file, here file 'json' contains the data
