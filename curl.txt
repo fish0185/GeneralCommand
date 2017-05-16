@@ -1,2 +1,14 @@
-curl -v http://example.com //ask curl to switch on verbose mode
-curl -vL http://example.com //switch on verbose mode and floows HTTP redirects
+curl -v http://example.com #ask curl to switch on verbose mode
+curl -vL http://example.com #switch on verbose mode and floows HTTP redirects
+curl http://example.com -vL #same as above
+*Long options - long options are always written with two minuses*
+curl --verbose http://example.com
+curl --verbose --location http://example.com #support redircts
+*Arguments to options - if yuo want to send an arbitrary string of data in an HTTP POST to a server*
+curl -d xxxDataxxx http://example.com
+curl --data xxxDataxxx http://example.com
+curl -dxxxDataxxx http://example.com //when you use the short options with arguments, you can write the data without the space separator
+*Arguments with spaces*
+curl -A "I am your father" http://example.com //set user-agent
+*fiddler and curl*
+curl -x 127.0.0.1:8888 -k www.example.com # -x option telling curl to using fidder as proxy, -k disale ssl validation, make sure provide fiddler's port number, in this case it is 8888, it is a one time setting next call will not use fidder proxy
