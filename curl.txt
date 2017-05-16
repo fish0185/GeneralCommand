@@ -1,0 +1,2 @@
+curl -v http://example.com //ask curl to switch on verbose mode
+curl -vL http://example.com //switch on verbose mode and floows HTTP redirects
