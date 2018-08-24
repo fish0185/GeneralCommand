@@ -1,0 +1,2 @@
+// download gitignore
+(new-object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore','.gitignore')
